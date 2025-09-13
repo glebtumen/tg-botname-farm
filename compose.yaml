@@ -1,0 +1,55 @@
+services:
+  # Бот 1
+  sale-bot-1:
+    build: .
+    container_name: sale-bot-1
+    restart: unless-stopped
+    environment:
+      - BOT_TOKEN=${BOT_TOKEN_1} # Токен берется из переменных окружения хоста
+
+  # Бот 2
+  sale-bot-2:
+    build: .
+    container_name: sale-bot-2
+    restart: unless-stopped
+    environment:
+      - BOT_TOKEN=${BOT_TOKEN_2}
+
+  
+  sale-bot-3:
+    build: .
+    container_name: sale-bot-3
+    restart: unless-stopped
+    environment:
+      - BOT_TOKEN=${BOT_TOKEN_3}
+  
+  sale-bot-4:
+    build: .
+    container_name: sale-bot-4
+    restart: unless-stopped
+    environment:
+      - BOT_TOKEN=${BOT_TOKEN_4}      
+
+  
+  sale-bot-5:
+    build: .
+    container_name: sale-bot-5
+    restart: unless-stopped
+    environment:
+      - BOT_TOKEN=${BOT_TOKEN_5}
+
+  
+  sale-bot-6:
+    build: .
+    container_name: sale-bot-6
+    restart: unless-stopped
+    environment:
+      - BOT_TOKEN=${BOT_TOKEN_6}
+
+  
+  sale-bot-7:
+    build: .
+    container_name: sale-bot-7
+    restart: unless-stopped
+    environment:
+      - BOT_TOKEN=${BOT_TOKEN_7}
