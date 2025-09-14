@@ -1,7 +1,7 @@
 services:
   # Бот 1
   sale-bot-1:
-    build: .
+    image: tgbot:prod
     container_name: sale-bot-1
     restart: unless-stopped
     environment:
@@ -9,7 +9,7 @@ services:
 
   # Бот 2
   sale-bot-2:
-    build: .
+    image: tgbot:prod
     container_name: sale-bot-2
     restart: unless-stopped
     environment:
@@ -17,14 +17,14 @@ services:
 
   
   sale-bot-3:
-    build: .
+    image: tgbot:prod
     container_name: sale-bot-3
     restart: unless-stopped
     environment:
       - BOT_TOKEN=${BOT_TOKEN_3}
   
   sale-bot-4:
-    build: .
+    image: tgbot:prod
     container_name: sale-bot-4
     restart: unless-stopped
     environment:
@@ -32,7 +32,7 @@ services:
 
   
   sale-bot-5:
-    build: .
+    image: tgbot:prod
     container_name: sale-bot-5
     restart: unless-stopped
     environment:
@@ -40,7 +40,7 @@ services:
 
   
   sale-bot-6:
-    build: .
+    image: tgbot:prod
     container_name: sale-bot-6
     restart: unless-stopped
     environment:
@@ -48,7 +48,7 @@ services:
 
   
   sale-bot-7:
-    build: .
+    image: tgbot:prod
     container_name: sale-bot-7
     restart: unless-stopped
     environment:
